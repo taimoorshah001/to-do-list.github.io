@@ -1,0 +1,23 @@
+{
+  "name": "todo-list-bug-detector",
+  "version": "1.0.0",
+  "description": "A to-do list application with AI-powered bug detection",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint *.js",
+    "bug-detect": "node bug-detector.js",
+    "analyze": "npm run lint && npm run bug-detect",
+    "test": "node test-runner.js"
+  },
+  "keywords": ["todo", "jquery", "bug-detection", "ai"],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-jquery": "^1.5.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.2.0"
+  }
+}

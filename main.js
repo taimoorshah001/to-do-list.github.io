@@ -1,12 +1,12 @@
 // scripts.js
 $(document).ready(function() {
     $('#add-task').click(function() {
-        let taskText = $('#new-task').val().trim();
+        const taskText = $('#new-task').val().trim();
 
         if (taskText) {
-            let taskItem = $('<li class="adding">').text(taskText);
-            let completeButton = $('<button class="complete">Complete</button>');
-            let removeButton = $('<button class="remove">Remove</button>');
+            const taskItem = $('<li class="adding">').text(taskText);
+            const completeButton = $('<button class="complete">Complete</button>');
+            const removeButton = $('<button class="remove">Remove</button>');
 
             taskItem.append(completeButton).append(removeButton);
             $('#task-list').append(taskItem);

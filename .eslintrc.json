@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "script"
+  },
+  "rules": {
+    "no-unused-vars": "error",
+    "no-undef": "error",
+    "no-console": "off",
+    "no-implicit-globals": "off",
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "prefer-const": "error",
+    "no-var": "error",
+    "eqeqeq": "error",
+    "curly": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "error",
+    "no-extra-semi": "error",
+    "no-unreachable": "error"
+  },
+  "globals": {
+    "$": "readonly",
+    "jQuery": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["main.js"],
+      "env": {
+        "browser": true,
+        "jquery": true,
+        "node": false
+      },
+      "rules": {
+        "no-console": "warn"
+      }
+    }
+  ]
+}
